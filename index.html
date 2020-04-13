@@ -33,6 +33,40 @@
     <script defer src="https://d3js.org/d3.v5.js"></script>
     <script defer src="index.js"></script>
     <script defer src="graph.js"></script>
+    <link rel="stylesheet" href="styles.css">
   </head>
-  <body></body>
+  <body class="grey darken-4">
+    <div class="nav z-depth-0">
+      <div class="section center">
+        <h3 class="white-text center">The Aleah</h3>
+      </div>
+    </div>
+
+    <div class="section center">
+      <p class="grey-text flow-text">A fitness tracker for Aleahs</p>
+    </div>
+
+    <div class="container section">
+      <div class="row">
+        <div class="col s12 l5">
+          <button class="active" data-activity="walking">Walking</button>
+          <button data-activity="Breathing">Breathing</button>
+          <button data-activity="Stretching">Stretching</button>
+          <button data-activity="Laying on bed">Laying on bed</button>
+        </div>
+        <div class="col s12 l6 push-l1">
+          <div class="canvas"></div>
+        </div>
+      </div>
+      <div class="row">
+        <form class="col m6 push-m3">
+          <p class="flow-text grey-text center">
+            How much <span>walking</span> have you done today?
+            <input type="text" class="grey-text" id="walking" placeholder="Distance in m" />
+            <p class="center pink-text error text-lighten-1"></p>
+          </p>
+        </form>
+      </div>
+    </div>
+  </body>
 </html>
