@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Fitness tracker for my wife</title>
+
+    <!-- The core Firebase JS SDK is always required and must be listed first -->
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.14.0/firebase-firestore.js"></script>
+
+    <script>
+      // Your web app's Firebase configuration
+      var firebaseConfig = {
+        apiKey: "AIzaSyDxBm_W2A25heQ-e74vOMuwVDeOxeXSRGs",
+        authDomain: "d3-practice-fitne.firebaseapp.com",
+        databaseURL: "https://d3-practice-fitne.firebaseio.com",
+        projectId: "d3-practice-fitne",
+        storageBucket: "d3-practice-fitne.appspot.com",
+        messagingSenderId: "779585256294",
+        appId: "1:779585256294:web:c0be69785f03c17a2766a7",
+      };
+      // Initialize Firebase
+      firebase.initializeApp(firebaseConfig);
+      const db = firebase.firestore();
+    </script>
+
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css" />
+    <!-- Compiled and minified JavaScript -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+    <script defer src="https://d3js.org/d3.v5.js"></script>
+    <script defer src="index.js"></script>
+    <script defer src="graph.js"></script>
+  </head>
+  <body></body>
+</html>
